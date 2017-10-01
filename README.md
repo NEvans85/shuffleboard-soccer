@@ -1,3 +1,2 @@
-# simple-physics-engine
+# Shuffleboard Soccer
 
-A 2D physics engine
