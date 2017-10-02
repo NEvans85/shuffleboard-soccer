@@ -36,3 +36,58 @@ This is the state at the beginning of the game as well as after each goal.
 The red arrow indicates the direction and magnitude of the puck movement.
 
 ![move in progress](/README_assets/move_in_progress.png)
+
+## Architecture and Technologies
+
+* Vanilla Javascript for game structure, logic, and physics engine.
+* HTML 5 Canvas for DOM manipulation and rendering.
+* Webpack to bundle and serve the various scripts.
+
+### Scripts
+
+* game.js - Houses player data, tracks the score, determines when the game is over, constructs the game by adding entities to the environment, handles player input, starts the interval which displays the game board at each frame.
+* render.js - Houses the logic which renders each of the entities at each frame.
+* environment.js - Houses the collection of entities used in the game, allows for the addition and removal of entities, passes the collection of entities to the collision detector and the results of that to the resolver to handle collisions at each frame.
+* environmant_params.js - Houses constants for gravity (used for calculating friction) and the interval length (16 for 60 FPS or 33 for 30 FPS). Any other constants necessary for the physics engine will go here.
+* collision_detector.js - Analyzes the collection of game entities to determine if any collisions have occurred.
+* collision_resolver.js - Takes in a collection of couplets which contain colliding entities. Calculated the resulting velocities of the entities using conservation of momentum.
+* entity.js - Parent class for other entities. Handles changes in position, velocity, and acceleration due to user applied force as well as friction. Variables: position, velocity, acceleration, frictionCoefficient, mass, and fill (for rendering). Public methods: nextFrame, applyForce, setVelocity
+* circle.js - Class for the puck and ball objects. Extends Entity. Variables: radius.
+* zone.js - Class for field and goal objects. Contains a method to determine if an object is contained within (for determining a successful goal).
+* wall.js - Class for objects which create the border around the play field and the back/sides of the goal. Might extend Entity.
+
+## Implementation Timeline
+
+Over the Weekend
+- [ ] Refresh my understanding of Newtonian Physics specifically focusing on friction and elastic collisions.
+- [ ] Build the structure/skeleton of the project.
+- [ ] Write entities for the physics engine.
+
+Monday
+- [ ] Build render functionality to provide a workspace to test the physics engine as I tune it.
+- [ ] Build collision detector.
+- [ ] Start collision handler.
+
+Tuesday
+
+- [ ] Work on collision handler. This seems like the most challenging part of the project.
+
+Wednesday
+
+- [ ] Implement user click and drag to "shoot" pucks.
+- [ ] Finish collision handler.
+
+Thursday
+
+- [ ] Build a rudimentary AI to provide some option for single player gameplay.
+- [ ] Build scorekeeping and rest of game script.
+
+Friday
+
+- [ ] Improve artistic styling and add sounds to improve user experience.
+
+## Bonus Features
+
+- [ ] Improve AI to provide a challenge to the player.
+- [ ] Design multiplayer fields to enable games with more players.
+- [ ] Multiplayer over the web with player accounts and leaderboards.
