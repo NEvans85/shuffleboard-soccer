@@ -24,3 +24,15 @@ To provide a single-player experience an AI will be developed with multiple diff
 * A simple AI will be implemented to provide a single player experience.
 
 ## Wireframes
+
+### Initial State
+
+This is the state at the beginning of the game as well as after each goal.
+
+![initial state](/README_assets/initial_setup.png)
+
+### Move in Progress
+
+The red arrow indicates the direction and magnitude of the puck movement.
+
+![move in progress](/README_assets/move_in_progress.png)
