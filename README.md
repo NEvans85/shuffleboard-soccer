@@ -2,6 +2,10 @@
 
 A turn-based two player strategy game modeled after Soccer.
 
+## Live Link
+
+[Shuffleboard Soccer](https://nevans85.github.io/shuffleboard-soccer/)
+
 ## Technologies Used
 
 Physics engine built from scratch in vanilla Javascript. Graphics are rendered entirely within an HTML5 Canvas element.
