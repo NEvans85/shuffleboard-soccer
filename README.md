@@ -42,7 +42,7 @@ Real world physics recreated in a digital space. Physics engine composed of thre
 
 The game could be improved in many ways.
 
-1. The game l;acks any instructions. These should definitely be added.
+1. The game lacks any instructions. These should definitely be added.
 1. Collisions around corners can be inaccurate, this could be addressed with conditional logic.
 2. Player accounts and network play could be implemented to provide a competitive community.
 3. An AI could be developed to provide a single player experience.
