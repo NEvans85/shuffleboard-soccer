@@ -1,4 +1,3 @@
-![Screenshot](http://res.cloudinary.com/arcane-lab/image/upload/v1507522293/Screen_Shot_2017-10-06_at_12.04.14_PM_hyv8xr.png)
 # ShuffleBoard Soccer
 
 A turn-based two player strategy game modeled after Soccer.
@@ -12,6 +11,8 @@ A turn-based two player strategy game modeled after Soccer.
 Physics engine built from scratch in vanilla Javascript. Graphics are rendered entirely within an HTML5 Canvas element.
 
 ## Features
+
+![Screenshot](http://res.cloudinary.com/arcane-lab/image/upload/v1507522293/Screen_Shot_2017-10-06_at_12.04.14_PM_hyv8xr.png)
 
 ### Gameplay
 
