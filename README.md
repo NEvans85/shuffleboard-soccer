@@ -12,6 +12,8 @@ Physics engine built from scratch in vanilla Javascript. Graphics are rendered e
 
 ## Features
 
+![Screenshot](http://res.cloudinary.com/arcane-lab/image/upload/v1507522293/Screen_Shot_2017-10-06_at_12.04.14_PM_hyv8xr.png)
+
 ### Gameplay
 
 Players click and drag on pucks to apply force in an attempt to bump the ball into the opposing goal. Game uses recursive calls to requestAnimationFrame to animate the game objects. Control switches between players after all entities have come to a stop. Score is kept and displayed. The first player to score three goals wins!
@@ -42,6 +44,8 @@ Real world physics recreated in a digital space. Physics engine composed of thre
 
 The game could be improved in many ways.
 
+1. The game lacks any instructions. These should definitely be added.
+2. The force a player applies to a puck should be limited and the indicator for it should be an arrow.
 1. Collisions around corners can be inaccurate, this could be addressed with conditional logic.
 2. Player accounts and network play could be implemented to provide a competitive community.
 3. An AI could be developed to provide a single player experience.
